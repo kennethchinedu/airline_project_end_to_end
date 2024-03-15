@@ -1,0 +1,44 @@
+[2024-03-10T12:44:59.678+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: netflix_etl_dag.is_api_available manual__2024-03-10T12:44:57.367807+00:00 [queued]>
+[2024-03-10T12:44:59.689+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: netflix_etl_dag.is_api_available manual__2024-03-10T12:44:57.367807+00:00 [queued]>
+[2024-03-10T12:44:59.690+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-10T12:44:59.707+0000] {taskinstance.py:2214} INFO - Executing <Task(SimpleHttpOperator): is_api_available> on 2024-03-10 12:44:57.367807+00:00
+[2024-03-10T12:44:59.713+0000] {standard_task_runner.py:60} INFO - Started process 130 to run task
+[2024-03-10T12:44:59.716+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'netflix_etl_dag', 'is_api_available', 'manual__2024-03-10T12:44:57.367807+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/netflix_dag.py', '--cfg-path', '/tmp/tmp6vdayf__']
+[2024-03-10T12:44:59.718+0000] {standard_task_runner.py:88} INFO - Job 16: Subtask is_api_available
+[2024-03-10T12:44:59.770+0000] {task_command.py:423} INFO - Running <TaskInstance: netflix_etl_dag.is_api_available manual__2024-03-10T12:44:57.367807+00:00 [running]> on host aaa4b1109113
+[2024-03-10T12:44:59.860+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='anamsken60@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='netflix_etl_dag' AIRFLOW_CTX_TASK_ID='is_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-03-10T12:44:57.367807+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-10T12:44:57.367807+00:00'
+[2024-03-10T12:44:59.862+0000] {http.py:169} INFO - Calling HTTP method
+[2024-03-10T12:44:59.871+0000] {base.py:83} INFO - Using connection ID 'netflix_api' for task execution.
+[2024-03-10T12:44:59.882+0000] {base.py:83} INFO - Using connection ID 'netflix_api' for task execution.
+[2024-03-10T12:45:01.515+0000] {http.py:192} ERROR - HTTP error: Unauthorized
+[2024-03-10T12:45:01.516+0000] {http.py:193} ERROR - {"message":"No API key found in request"}
+[2024-03-10T12:45:01.528+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/hooks/http.py", line 190, in check_response
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.apilayer.com/unogs//search/titles/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/operators/http.py", line 166, in execute
+    return self.execute_sync(context=context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/operators/http.py", line 170, in execute_sync
+    response = self.hook.run(self.endpoint, self.data, self.headers, self.extra_options)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/hooks/http.py", line 180, in run
+    return self.run_and_check(session, prepped_request, extra_options)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/hooks/http.py", line 231, in run_and_check
+    self.check_response(response)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/http/hooks/http.py", line 194, in check_response
+    raise AirflowException(str(response.status_code) + ":" + response.reason)
+airflow.exceptions.AirflowException: 401:Unauthorized
+[2024-03-10T12:45:01.533+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=netflix_etl_dag, task_id=is_api_available, execution_date=20240310T124457, start_date=20240310T124459, end_date=20240310T124501
+[2024-03-10T12:45:01.551+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 16 for task is_api_available (401:Unauthorized; 130)
+[2024-03-10T12:45:01.595+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-10T12:45:01.622+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

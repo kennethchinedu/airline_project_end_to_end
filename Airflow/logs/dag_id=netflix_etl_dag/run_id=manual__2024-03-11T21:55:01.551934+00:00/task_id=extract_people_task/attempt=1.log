@@ -1,0 +1,219 @@
+[2024-03-11T21:55:15.663+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: netflix_etl_dag.extract_people_task manual__2024-03-11T21:55:01.551934+00:00 [queued]>
+[2024-03-11T21:55:15.697+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: netflix_etl_dag.extract_people_task manual__2024-03-11T21:55:01.551934+00:00 [queued]>
+[2024-03-11T21:55:15.700+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-11T21:55:15.757+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_people_task> on 2024-03-11 21:55:01.551934+00:00
+[2024-03-11T21:55:15.769+0000] {standard_task_runner.py:60} INFO - Started process 17422 to run task
+[2024-03-11T21:55:15.777+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'netflix_etl_dag', 'extract_people_task', 'manual__2024-03-11T21:55:01.551934+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/netflix_dag.py', '--cfg-path', '/tmp/tmp47iwa7zw']
+[2024-03-11T21:55:15.801+0000] {standard_task_runner.py:88} INFO - Job 84: Subtask extract_people_task
+[2024-03-11T21:55:15.909+0000] {task_command.py:423} INFO - Running <TaskInstance: netflix_etl_dag.extract_people_task manual__2024-03-11T21:55:01.551934+00:00 [running]> on host 472fedd09e2a
+[2024-03-11T21:55:16.119+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='anamsken60@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='netflix_etl_dag' AIRFLOW_CTX_TASK_ID='extract_people_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-11T21:55:01.551934+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-11T21:55:01.551934+00:00'
+[2024-03-11T21:55:26.581+0000] {logging_mixin.py:188} INFO - loaded600 data
+[2024-03-11T21:55:34.587+0000] {logging_mixin.py:188} INFO - loaded700 data
+[2024-03-11T21:55:42.128+0000] {logging_mixin.py:188} INFO - loaded800 data
+[2024-03-11T21:55:49.871+0000] {logging_mixin.py:188} INFO - loaded900 data
+[2024-03-11T21:55:57.791+0000] {logging_mixin.py:188} INFO - loaded1000 data
+[2024-03-11T21:56:05.854+0000] {logging_mixin.py:188} INFO - loaded1100 data
+[2024-03-11T21:56:13.579+0000] {logging_mixin.py:188} INFO - loaded1200 data
+[2024-03-11T21:56:21.371+0000] {logging_mixin.py:188} INFO - loaded1300 data
+[2024-03-11T21:56:28.736+0000] {logging_mixin.py:188} INFO - loaded1400 data
+[2024-03-11T21:56:35.870+0000] {logging_mixin.py:188} INFO - loaded1500 data
+[2024-03-11T21:56:43.094+0000] {logging_mixin.py:188} INFO - loaded1600 data
+[2024-03-11T21:56:51.668+0000] {logging_mixin.py:188} INFO - loaded1700 data
+[2024-03-11T21:56:59.435+0000] {logging_mixin.py:188} INFO - loaded1800 data
+[2024-03-11T21:57:07.539+0000] {logging_mixin.py:188} INFO - loaded1900 data
+[2024-03-11T21:57:15.559+0000] {logging_mixin.py:188} INFO - loaded2000 data
+[2024-03-11T21:57:24.375+0000] {logging_mixin.py:188} INFO - loaded2100 data
+[2024-03-11T21:57:32.100+0000] {logging_mixin.py:188} INFO - loaded2200 data
+[2024-03-11T21:57:40.771+0000] {logging_mixin.py:188} INFO - loaded2300 data
+[2024-03-11T21:57:48.689+0000] {logging_mixin.py:188} INFO - loaded2400 data
+[2024-03-11T21:57:55.968+0000] {logging_mixin.py:188} INFO - loaded2500 data
+[2024-03-11T21:58:04.746+0000] {logging_mixin.py:188} INFO - loaded2600 data
+[2024-03-11T21:58:12.981+0000] {logging_mixin.py:188} INFO - loaded2700 data
+[2024-03-11T21:58:20.627+0000] {logging_mixin.py:188} INFO - loaded2800 data
+[2024-03-11T21:58:28.368+0000] {logging_mixin.py:188} INFO - loaded2900 data
+[2024-03-11T21:58:36.120+0000] {logging_mixin.py:188} INFO - loaded3000 data
+[2024-03-11T21:58:43.985+0000] {logging_mixin.py:188} INFO - loaded3100 data
+[2024-03-11T21:58:51.356+0000] {logging_mixin.py:188} INFO - loaded3200 data
+[2024-03-11T21:58:59.279+0000] {logging_mixin.py:188} INFO - loaded3300 data
+[2024-03-11T21:59:07.068+0000] {logging_mixin.py:188} INFO - loaded3400 data
+[2024-03-11T21:59:14.572+0000] {logging_mixin.py:188} INFO - loaded3500 data
+[2024-03-11T21:59:22.265+0000] {logging_mixin.py:188} INFO - loaded3600 data
+[2024-03-11T21:59:30.232+0000] {logging_mixin.py:188} INFO - loaded3700 data
+[2024-03-11T21:59:37.451+0000] {logging_mixin.py:188} INFO - loaded3800 data
+[2024-03-11T21:59:44.682+0000] {logging_mixin.py:188} INFO - loaded3900 data
+[2024-03-11T21:59:53.031+0000] {logging_mixin.py:188} INFO - loaded4000 data
+[2024-03-11T22:00:00.979+0000] {logging_mixin.py:188} INFO - loaded4100 data
+[2024-03-11T22:00:12.061+0000] {logging_mixin.py:188} INFO - loaded4200 data
+[2024-03-11T22:00:20.663+0000] {logging_mixin.py:188} INFO - loaded4300 data
+[2024-03-11T22:00:28.463+0000] {logging_mixin.py:188} INFO - loaded4400 data
+[2024-03-11T22:00:36.142+0000] {logging_mixin.py:188} INFO - loaded4500 data
+[2024-03-11T22:00:43.611+0000] {logging_mixin.py:188} INFO - loaded4600 data
+[2024-03-11T22:00:51.380+0000] {logging_mixin.py:188} INFO - loaded4700 data
+[2024-03-11T22:00:58.669+0000] {logging_mixin.py:188} INFO - loaded4800 data
+[2024-03-11T22:01:06.479+0000] {logging_mixin.py:188} INFO - loaded4900 data
+[2024-03-11T22:01:14.665+0000] {logging_mixin.py:188} INFO - loaded5000 data
+[2024-03-11T22:01:22.481+0000] {logging_mixin.py:188} INFO - loaded5100 data
+[2024-03-11T22:01:29.992+0000] {logging_mixin.py:188} INFO - loaded5200 data
+[2024-03-11T22:01:39.166+0000] {logging_mixin.py:188} INFO - loaded5300 data
+[2024-03-11T22:01:46.904+0000] {logging_mixin.py:188} INFO - loaded5400 data
+[2024-03-11T22:01:54.600+0000] {logging_mixin.py:188} INFO - loaded5500 data
+[2024-03-11T22:02:03.262+0000] {logging_mixin.py:188} INFO - loaded5600 data
+[2024-03-11T22:02:11.458+0000] {logging_mixin.py:188} INFO - loaded5700 data
+[2024-03-11T22:02:18.825+0000] {logging_mixin.py:188} INFO - loaded5800 data
+[2024-03-11T22:02:27.433+0000] {logging_mixin.py:188} INFO - loaded5900 data
+[2024-03-11T22:02:34.772+0000] {logging_mixin.py:188} INFO - loaded6000 data
+[2024-03-11T22:02:42.381+0000] {logging_mixin.py:188} INFO - loaded6100 data
+[2024-03-11T22:02:49.630+0000] {logging_mixin.py:188} INFO - loaded6200 data
+[2024-03-11T22:02:58.327+0000] {logging_mixin.py:188} INFO - loaded6300 data
+[2024-03-11T22:03:05.839+0000] {logging_mixin.py:188} INFO - loaded6400 data
+[2024-03-11T22:03:13.554+0000] {logging_mixin.py:188} INFO - loaded6500 data
+[2024-03-11T22:03:21.621+0000] {logging_mixin.py:188} INFO - loaded6600 data
+[2024-03-11T22:03:29.873+0000] {logging_mixin.py:188} INFO - loaded6700 data
+[2024-03-11T22:03:37.477+0000] {logging_mixin.py:188} INFO - loaded6800 data
+[2024-03-11T22:03:45.309+0000] {logging_mixin.py:188} INFO - loaded6900 data
+[2024-03-11T22:03:52.794+0000] {logging_mixin.py:188} INFO - loaded7000 data
+[2024-03-11T22:04:01.034+0000] {logging_mixin.py:188} INFO - loaded7100 data
+[2024-03-11T22:04:09.315+0000] {logging_mixin.py:188} INFO - loaded7200 data
+[2024-03-11T22:04:17.862+0000] {logging_mixin.py:188} INFO - loaded7300 data
+[2024-03-11T22:04:25.602+0000] {logging_mixin.py:188} INFO - loaded7400 data
+[2024-03-11T22:04:34.229+0000] {logging_mixin.py:188} INFO - loaded7500 data
+[2024-03-11T22:04:42.142+0000] {logging_mixin.py:188} INFO - loaded7600 data
+[2024-03-11T22:04:49.916+0000] {logging_mixin.py:188} INFO - loaded7700 data
+[2024-03-11T22:04:58.235+0000] {logging_mixin.py:188} INFO - loaded7800 data
+[2024-03-11T22:05:06.698+0000] {logging_mixin.py:188} INFO - loaded7900 data
+[2024-03-11T22:05:14.712+0000] {logging_mixin.py:188} INFO - loaded8000 data
+[2024-03-11T22:05:22.435+0000] {logging_mixin.py:188} INFO - loaded8100 data
+[2024-03-11T22:05:29.752+0000] {logging_mixin.py:188} INFO - loaded8200 data
+[2024-03-11T22:05:37.065+0000] {logging_mixin.py:188} INFO - loaded8300 data
+[2024-03-11T22:05:44.886+0000] {logging_mixin.py:188} INFO - loaded8400 data
+[2024-03-11T22:05:52.723+0000] {logging_mixin.py:188} INFO - loaded8500 data
+[2024-03-11T22:06:00.393+0000] {logging_mixin.py:188} INFO - loaded8600 data
+[2024-03-11T22:06:08.431+0000] {logging_mixin.py:188} INFO - loaded8700 data
+[2024-03-11T22:06:16.420+0000] {logging_mixin.py:188} INFO - loaded8800 data
+[2024-03-11T22:06:23.933+0000] {logging_mixin.py:188} INFO - loaded8900 data
+[2024-03-11T22:06:31.376+0000] {logging_mixin.py:188} INFO - loaded9000 data
+[2024-03-11T22:06:39.305+0000] {logging_mixin.py:188} INFO - loaded9100 data
+[2024-03-11T22:06:47.549+0000] {logging_mixin.py:188} INFO - loaded9200 data
+[2024-03-11T22:06:54.984+0000] {logging_mixin.py:188} INFO - loaded9300 data
+[2024-03-11T22:07:02.419+0000] {logging_mixin.py:188} INFO - loaded9400 data
+[2024-03-11T22:07:10.317+0000] {logging_mixin.py:188} INFO - loaded9500 data
+[2024-03-11T22:07:18.363+0000] {logging_mixin.py:188} INFO - loaded9600 data
+[2024-03-11T22:07:25.948+0000] {logging_mixin.py:188} INFO - loaded9700 data
+[2024-03-11T22:08:06.959+0000] {logging_mixin.py:188} INFO - loaded9800 data
+[2024-03-11T22:08:14.975+0000] {logging_mixin.py:188} INFO - loaded9900 data
+[2024-03-11T22:08:52.598+0000] {logging_mixin.py:188} INFO - loaded10000 data
+[2024-03-11T22:09:00.590+0000] {logging_mixin.py:188} INFO - loaded10100 data
+[2024-03-11T22:09:09.112+0000] {logging_mixin.py:188} INFO - loaded10200 data
+[2024-03-11T22:09:17.012+0000] {logging_mixin.py:188} INFO - loaded10300 data
+[2024-03-11T22:09:24.443+0000] {logging_mixin.py:188} INFO - loaded10400 data
+[2024-03-11T22:09:31.745+0000] {logging_mixin.py:188} INFO - loaded10500 data
+[2024-03-11T22:09:39.699+0000] {logging_mixin.py:188} INFO - loaded10600 data
+[2024-03-11T22:09:47.107+0000] {logging_mixin.py:188} INFO - loaded10700 data
+[2024-03-11T22:09:54.225+0000] {logging_mixin.py:188} INFO - loaded10800 data
+[2024-03-11T22:10:02.750+0000] {logging_mixin.py:188} INFO - loaded10900 data
+[2024-03-11T22:10:11.722+0000] {logging_mixin.py:188} INFO - loaded11000 data
+[2024-03-11T22:10:19.075+0000] {logging_mixin.py:188} INFO - loaded11100 data
+[2024-03-11T22:10:27.496+0000] {logging_mixin.py:188} INFO - loaded11200 data
+[2024-03-11T22:10:34.824+0000] {logging_mixin.py:188} INFO - loaded11300 data
+[2024-03-11T22:10:42.053+0000] {logging_mixin.py:188} INFO - loaded11400 data
+[2024-03-11T22:10:49.876+0000] {logging_mixin.py:188} INFO - loaded11500 data
+[2024-03-11T22:10:57.485+0000] {logging_mixin.py:188} INFO - loaded11600 data
+[2024-03-11T22:11:05.054+0000] {logging_mixin.py:188} INFO - loaded11700 data
+[2024-03-11T22:11:12.569+0000] {logging_mixin.py:188} INFO - loaded11800 data
+[2024-03-11T22:11:20.134+0000] {logging_mixin.py:188} INFO - loaded11900 data
+[2024-03-11T22:11:28.385+0000] {logging_mixin.py:188} INFO - loaded12000 data
+[2024-03-11T22:11:35.956+0000] {logging_mixin.py:188} INFO - loaded12100 data
+[2024-03-11T22:11:44.165+0000] {logging_mixin.py:188} INFO - loaded12200 data
+[2024-03-11T22:11:53.058+0000] {logging_mixin.py:188} INFO - loaded12300 data
+[2024-03-11T22:12:00.355+0000] {logging_mixin.py:188} INFO - loaded12400 data
+[2024-03-11T22:12:08.344+0000] {logging_mixin.py:188} INFO - loaded12500 data
+[2024-03-11T22:12:16.203+0000] {logging_mixin.py:188} INFO - loaded12600 data
+[2024-03-11T22:12:23.775+0000] {logging_mixin.py:188} INFO - loaded12700 data
+[2024-03-11T22:12:31.626+0000] {logging_mixin.py:188} INFO - loaded12800 data
+[2024-03-11T22:12:39.254+0000] {logging_mixin.py:188} INFO - loaded12900 data
+[2024-03-11T22:12:47.387+0000] {logging_mixin.py:188} INFO - loaded13000 data
+[2024-03-11T22:12:55.176+0000] {logging_mixin.py:188} INFO - loaded13100 data
+[2024-03-11T22:13:03.045+0000] {logging_mixin.py:188} INFO - loaded13200 data
+[2024-03-11T22:13:11.601+0000] {logging_mixin.py:188} INFO - loaded13300 data
+[2024-03-11T22:13:19.334+0000] {logging_mixin.py:188} INFO - loaded13400 data
+[2024-03-11T22:13:29.394+0000] {logging_mixin.py:188} INFO - loaded13500 data
+[2024-03-11T22:13:36.386+0000] {logging_mixin.py:188} INFO - loaded13600 data
+[2024-03-11T22:13:42.747+0000] {logging_mixin.py:188} INFO - loaded13700 data
+[2024-03-11T22:13:50.207+0000] {logging_mixin.py:188} INFO - loaded13800 data
+[2024-03-11T22:13:57.491+0000] {logging_mixin.py:188} INFO - loaded13900 data
+[2024-03-11T22:14:04.467+0000] {logging_mixin.py:188} INFO - loaded14000 data
+[2024-03-11T22:14:11.811+0000] {logging_mixin.py:188} INFO - loaded14100 data
+[2024-03-11T22:14:18.749+0000] {logging_mixin.py:188} INFO - loaded14200 data
+[2024-03-11T22:14:26.529+0000] {logging_mixin.py:188} INFO - loaded14300 data
+[2024-03-11T22:14:41.156+0000] {logging_mixin.py:188} INFO - loaded14400 data
+[2024-03-11T22:14:47.225+0000] {logging_mixin.py:188} INFO - loaded14500 data
+[2024-03-11T22:14:53.431+0000] {logging_mixin.py:188} INFO - loaded14600 data
+[2024-03-11T22:17:09.080+0000] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.8/site-packages/urllib3/connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.8/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/netflix_dag.py", line 81, in extract_people
+    response = requests.request("GET", url, headers=headers, data=payload)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2024-03-11T22:17:09.118+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=netflix_etl_dag, task_id=extract_people_task, execution_date=20240311T215501, start_date=20240311T215515, end_date=20240311T221709
+[2024-03-11T22:17:09.136+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 84 for task extract_people_task (('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')); 17422)
+[2024-03-11T22:17:09.169+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-11T22:17:09.185+0000] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

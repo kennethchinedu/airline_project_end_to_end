@@ -1,0 +1,18 @@
+[2024-03-10T13:37:32.069+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: netflix_etl_dag.is_api_available manual__2024-03-10T13:17:18.171216+00:00 [queued]>
+[2024-03-10T13:37:32.079+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: netflix_etl_dag.is_api_available manual__2024-03-10T13:17:18.171216+00:00 [queued]>
+[2024-03-10T13:37:32.081+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 3
+[2024-03-10T13:37:32.095+0000] {taskinstance.py:2214} INFO - Executing <Task(HttpSensor): is_api_available> on 2024-03-10 13:17:18.171216+00:00
+[2024-03-10T13:37:32.101+0000] {standard_task_runner.py:60} INFO - Started process 115 to run task
+[2024-03-10T13:37:32.105+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'netflix_etl_dag', 'is_api_available', 'manual__2024-03-10T13:17:18.171216+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/netflix_dag.py', '--cfg-path', '/tmp/tmp7vl5fmvs']
+[2024-03-10T13:37:32.107+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask is_api_available
+[2024-03-10T13:37:32.166+0000] {task_command.py:423} INFO - Running <TaskInstance: netflix_etl_dag.is_api_available manual__2024-03-10T13:17:18.171216+00:00 [running]> on host f228308a413a
+[2024-03-10T13:37:32.261+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='anamsken60@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='netflix_etl_dag' AIRFLOW_CTX_TASK_ID='is_api_available' AIRFLOW_CTX_EXECUTION_DATE='2024-03-10T13:17:18.171216+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-10T13:17:18.171216+00:00'
+[2024-03-10T13:37:32.264+0000] {http.py:137} INFO - Poking: unogs/
+[2024-03-10T13:37:32.276+0000] {base.py:83} INFO - Using connection ID 'netflix_api' for task execution.
+[2024-03-10T13:37:33.223+0000] {http.py:192} ERROR - HTTP error: Not Found
+[2024-03-10T13:37:33.224+0000] {http.py:193} ERROR - {"message":"no Route matched with those values"}
+[2024-03-10T13:38:08.514+0000] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-03-10T13:38:08.517+0000] {process_utils.py:131} INFO - Sending 15 to group 115. PIDs of all processes in the group: [115]
+[2024-03-10T13:38:08.517+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 115
+[2024-03-10T13:38:08.518+0000] {taskinstance.py:2480} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-03-10T13:38:08.549+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=115, status='terminated', exitcode=0, started='13:37:31') (115) terminated with exit code 0

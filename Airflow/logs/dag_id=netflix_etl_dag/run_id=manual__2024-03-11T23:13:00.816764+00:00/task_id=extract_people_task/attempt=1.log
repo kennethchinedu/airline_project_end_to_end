@@ -1,0 +1,16 @@
+[2024-03-11T23:13:13.270+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: netflix_etl_dag.extract_people_task manual__2024-03-11T23:13:00.816764+00:00 [queued]>
+[2024-03-11T23:13:13.279+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: netflix_etl_dag.extract_people_task manual__2024-03-11T23:13:00.816764+00:00 [queued]>
+[2024-03-11T23:13:13.279+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 3
+[2024-03-11T23:13:13.296+0000] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_people_task> on 2024-03-11 23:13:00.816764+00:00
+[2024-03-11T23:13:13.302+0000] {standard_task_runner.py:60} INFO - Started process 18533 to run task
+[2024-03-11T23:13:13.306+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'netflix_etl_dag', 'extract_people_task', 'manual__2024-03-11T23:13:00.816764+00:00', '--job-id', '88', '--raw', '--subdir', 'DAGS_FOLDER/netflix_dag.py', '--cfg-path', '/tmp/tmpg8_ntivp']
+[2024-03-11T23:13:13.310+0000] {standard_task_runner.py:88} INFO - Job 88: Subtask extract_people_task
+[2024-03-11T23:13:13.367+0000] {task_command.py:423} INFO - Running <TaskInstance: netflix_etl_dag.extract_people_task manual__2024-03-11T23:13:00.816764+00:00 [running]> on host 472fedd09e2a
+[2024-03-11T23:13:13.470+0000] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='anamsken60@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='netflix_etl_dag' AIRFLOW_CTX_TASK_ID='extract_people_task' AIRFLOW_CTX_EXECUTION_DATE='2024-03-11T23:13:00.816764+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-11T23:13:00.816764+00:00'
+[2024-03-11T23:13:23.297+0000] {logging_mixin.py:188} INFO - loaded600 data
+[2024-03-11T23:13:31.129+0000] {logging_mixin.py:188} INFO - loaded700 data
+[2024-03-11T23:13:38.759+0000] {logging_mixin.py:188} INFO - loaded800 data
+[2024-03-11T23:13:46.577+0000] {logging_mixin.py:188} INFO - loaded900 data
+[2024-03-11T23:13:53.059+0000] {logging_mixin.py:188} INFO - loaded1000 data
+[2024-03-11T23:14:01.426+0000] {logging_mixin.py:188} INFO - loaded1100 data
+[2024-03-11T23:14:09.093+0000] {logging_mixin.py:188} INFO - loaded1200 data
